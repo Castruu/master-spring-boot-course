@@ -4,6 +4,11 @@ import com.example.beans.Vehicle;
 import com.example.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Function;
+
 
 public class Example16 {
 
@@ -17,4 +22,5 @@ public class Example16 {
             System.out.println(vehicle1 == vehicle2);
         }
     }
+
 }
