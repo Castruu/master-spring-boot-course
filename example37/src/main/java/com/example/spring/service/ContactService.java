@@ -14,6 +14,7 @@ import org.springframework.web.context.annotation.SessionScope;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Service
@@ -37,21 +38,27 @@ public class ContactService {
         contact.setStatus(ESConstants.OPEN);
         contact.setCreatedBy(ESConstants.ANONYMOUS);
         contact.setCreatedAt(LocalDateTime.now());
-        int result = contactRepository.saveContactMsg(contact);
-        isSaved = result > 0;
+        Contact savedContact = contactRepository.save(contact);
+        isSaved = savedContact.getContactId() > 0;
         log.info(contact.toString());
         return isSaved;
     }
 
 
     public List<Contact> findMsgsWithOpenStatus() {
-        return contactRepository.findMsgsWithStatus(ESConstants.OPEN);
+        return contactRepository.findByStatus(ESConstants.OPEN);
     }
 
     public boolean closeMessage(int contactId, String updatedBy) {
         boolean isUpdated = false;
-        int result = contactRepository.updateMessageStatus(contactId, ESConstants.CLOSED, updatedBy);
-        isUpdated = result > 0;
+        Optional<Contact> contact = contactRepository.findById(contactId);
+        contact.ifPresent(c -> {
+            c.setStatus(ESConstants.CLOSED);
+            c.setUpdatedBy(updatedBy);
+            c.setUpdatedAt(LocalDateTime.now());
+        });
+        Contact savedContact = contactRepository.save(contact.orElseThrow());
+        isUpdated = savedContact.getContactId() > 0;;
         return isUpdated;
     }
 }

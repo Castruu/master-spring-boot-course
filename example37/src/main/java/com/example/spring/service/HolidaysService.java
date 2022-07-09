@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 @Service
 public class HolidaysService {
@@ -18,7 +20,8 @@ public class HolidaysService {
     }
 
     public List<Holiday> findAllHolidays() {
-        return holidaysRepository.findAllHolidays();
+        Iterable<Holiday> holidayIterator = holidaysRepository.findAll();
+        return StreamSupport.stream(holidayIterator.spliterator(), false).collect(Collectors.toList());
     }
 
 }
