@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Slf4j
 @RestController // @Controller + @ResponseBody in all methods
-@RequestMapping(value = "/api/contact", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(value = "/api/contact", produces = {MediaType.APPLICATION_JSON_VALUE})
 @CrossOrigin(origins = "*")
 public class ContactRestController {
 
@@ -48,6 +48,7 @@ public class ContactRestController {
         Response response = new Response();
         response.setStatusCode(200);
         response.setStatusMessage("Message created successfully");
+        contactRepository.save(contact);
         return ResponseEntity
                 .status(200)
                 .header("isMessageSaved", "true")
