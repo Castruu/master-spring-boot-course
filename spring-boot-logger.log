@@ -44,3 +44,598 @@
 2022-07-17 16:02:52,743 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] ERROR
 2022-07-17 16:02:52,744 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) method is : 705
 2022-07-17 16:02:52,744 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) execution ended
+2022-07-17 16:24:58,013 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:24:58,094 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:24:59,780 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 16:25:29,573 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:25:29,674 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:25:29,674 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:25:30,646 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:25:30,770 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 106 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:25:32,357 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:25:32,368 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:25:32,369 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:25:32,370 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:25:32,484 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:25:32,484 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2809 ms
+2022-07-17 16:25:32,759 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:25:34,962 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:25:35,091 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:25:35,165 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:25:35,338 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:25:35,465 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:25:36,242 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:25:36,342 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:25:37,086 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:25:37,107 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'pageSize'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+2022-07-17 16:25:37,108 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:25:37,110 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:25:38,271 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2022-07-17 16:25:38,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-07-17 16:25:38,287 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-17 16:25:38,317 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'pageSize'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.spring.ESApplication.main(ESApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:79)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1339)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.valueOf(Integer.java:999)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	... 28 common frames omitted
+2022-07-17 16:25:57,744 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:25:57,815 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:25:57,815 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:25:58,475 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:25:58,546 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 62 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:25:59,844 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:25:59,878 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:25:59,880 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:25:59,884 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:26:00,082 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:26:00,084 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2268 ms
+2022-07-17 16:26:00,580 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:26:02,958 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:26:03,049 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:26:03,080 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:26:03,167 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:26:03,273 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:26:03,769 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:26:03,825 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:26:04,311 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:26:04,329 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'pageSize'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+2022-07-17 16:26:04,330 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:26:04,333 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:26:04,731 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2022-07-17 16:26:04,740 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-07-17 16:26:04,766 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-17 16:26:04,790 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dashboardController': Unsatisfied dependency expressed through field 'pageSize'; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.spring.ESApplication.main(ESApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:79)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1339)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	... 25 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "eazyschool.pageSize"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.valueOf(Integer.java:999)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:211)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	... 28 common frames omitted
+2022-07-17 16:26:56,791 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:26:56,879 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:26:56,879 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:26:57,650 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:26:57,740 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 80 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:26:58,869 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:26:58,877 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:26:58,878 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:26:58,879 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:26:58,968 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:26:58,968 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2087 ms
+2022-07-17 16:26:59,183 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:27:01,413 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:27:01,518 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:27:01,559 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:27:01,707 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:27:01,800 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:27:02,424 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:27:02,500 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:27:03,079 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:27:03,175 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:27:03,184 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 8
+2022-07-17 16:27:03,184 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:27:03,350 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:27:03,385 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 16:27:03,921 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:27:03,925 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 3
+2022-07-17 16:27:03,925 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:27:04,322 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39a1eb53, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ffd1fe6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cba61cf, org.springframework.security.web.header.HeaderWriterFilter@6f0cc5, org.springframework.security.web.csrf.CsrfFilter@21ca8859, org.springframework.security.web.authentication.logout.LogoutFilter@6d2d322d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@754a1bfd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43ae54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d8891af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c2f892c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2513343, org.springframework.security.web.session.SessionManagementFilter@74e7fe55, org.springframework.security.web.access.ExceptionTranslationFilter@5fa7bd0, org.springframework.security.web.access.intercept.AuthorizationFilter@20bbbb84]
+2022-07-17 16:27:04,323 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 971
+2022-07-17 16:27:04,323 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:27:05,216 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-17 16:27:05,243 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:27:05,262 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-17 16:27:19,717 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 16:27:19,718 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-07-17 16:27:19,720 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-07-17 16:27:19,799 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] String com.example.spring.controller.LoginController.displayLoginPage(String,String,String,Model) method execution started!
+2022-07-17 16:27:19,803 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute String com.example.spring.controller.LoginController.displayLoginPage(String,String,String,Model) method is : 3
+2022-07-17 16:27:19,803 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] String com.example.spring.controller.LoginController.displayLoginPage(String,String,String,Model) execution ended
+2022-07-17 16:27:24,439 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] boolean com.example.spring.security.ESUsernamePwdAuthenticationProvider.supports(Class) method execution started!
+2022-07-17 16:27:24,443 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Time took to execute boolean com.example.spring.security.ESUsernamePwdAuthenticationProvider.supports(Class) method is : 3
+2022-07-17 16:27:24,443 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] boolean com.example.spring.security.ESUsernamePwdAuthenticationProvider.supports(Class) execution ended
+2022-07-17 16:27:24,444 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Authentication com.example.spring.security.ESUsernamePwdAuthenticationProvider.authenticate(Authentication) method execution started!
+2022-07-17 16:27:24,445 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Person com.example.spring.repository.PersonRepository.findByEmail(String) method execution started!
+2022-07-17 16:27:25,207 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Time took to execute Person com.example.spring.repository.PersonRepository.findByEmail(String) method is : 762
+2022-07-17 16:27:25,207 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Person com.example.spring.repository.PersonRepository.findByEmail(String) execution ended
+2022-07-17 16:27:25,314 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Time took to execute Authentication com.example.spring.security.ESUsernamePwdAuthenticationProvider.authenticate(Authentication) method is : 870
+2022-07-17 16:27:25,315 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-5] Authentication com.example.spring.security.ESUsernamePwdAuthenticationProvider.authenticate(Authentication) execution ended
+2022-07-17 16:27:25,324 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) method execution started!
+2022-07-17 16:27:25,327 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] Person com.example.spring.repository.PersonRepository.findByEmail(String) method execution started!
+2022-07-17 16:27:25,802 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] Time took to execute Person com.example.spring.repository.PersonRepository.findByEmail(String) method is : 473
+2022-07-17 16:27:25,802 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] Person com.example.spring.repository.PersonRepository.findByEmail(String) execution ended
+2022-07-17 16:27:25,803 WARN com.example.spring.controller.DashboardController [http-nio-8080-exec-4] WARN
+2022-07-17 16:27:25,803 INFO com.example.spring.controller.DashboardController [http-nio-8080-exec-4] INFO
+2022-07-17 16:27:25,803 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-4] ERROR
+2022-07-17 16:27:25,804 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-4] defaultPageSize = 10
+2022-07-17 16:27:25,805 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-4] successMessage = Your message was created sucessfully
+2022-07-17 16:27:25,805 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] Time took to execute String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) method is : 480
+2022-07-17 16:27:25,805 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-4] String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) execution ended
+2022-07-17 16:31:46,955 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:31:46,957 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:31:48,535 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 16:31:59,662 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:31:59,807 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:31:59,807 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:32:01,032 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:32:01,158 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 109 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:32:03,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:32:03,392 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:32:03,393 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:32:03,394 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:32:03,606 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:32:03,607 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3798 ms
+2022-07-17 16:32:04,228 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:32:08,191 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:32:08,651 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:32:08,884 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:32:09,401 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:32:09,937 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:32:12,341 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:32:12,699 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:32:14,797 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:32:15,030 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:32:15,049 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 16
+2022-07-17 16:32:15,050 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:32:15,455 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:32:15,540 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 16:32:16,533 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:32:16,541 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 5
+2022-07-17 16:32:16,541 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:32:17,558 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f7eaef6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b4f178, org.springframework.security.web.context.SecurityContextPersistenceFilter@30786cc8, org.springframework.security.web.header.HeaderWriterFilter@3706c42f, org.springframework.security.web.csrf.CsrfFilter@741fd551, org.springframework.security.web.authentication.logout.LogoutFilter@578377dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@162cc052, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61fd4b71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3032fb88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48845d2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2999809c, org.springframework.security.web.session.SessionManagementFilter@1b230965, org.springframework.security.web.access.ExceptionTranslationFilter@1c6355a, org.springframework.security.web.access.intercept.AuthorizationFilter@6c48f847]
+2022-07-17 16:32:17,559 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 2103
+2022-07-17 16:32:17,560 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:32:19,806 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-17 16:32:19,860 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:32:19,890 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-17 16:32:26,587 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 16:32:26,587 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-07-17 16:32:26,590 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2022-07-17 16:32:26,635 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) method execution started!
+2022-07-17 16:32:26,639 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Person com.example.spring.repository.PersonRepository.findByEmail(String) method execution started!
+2022-07-17 16:32:27,373 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Person com.example.spring.repository.PersonRepository.findByEmail(String) method is : 733
+2022-07-17 16:32:27,374 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Person com.example.spring.repository.PersonRepository.findByEmail(String) execution ended
+2022-07-17 16:32:27,376 WARN com.example.spring.controller.DashboardController [http-nio-8080-exec-1] WARN
+2022-07-17 16:32:27,377 INFO com.example.spring.controller.DashboardController [http-nio-8080-exec-1] INFO
+2022-07-17 16:32:27,377 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] ERROR
+2022-07-17 16:32:27,378 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] defaultPageSize with @Value = 10
+2022-07-17 16:32:27,379 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] successMessage with @Value = Your message was created sucessfully
+2022-07-17 16:32:27,379 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] defaultPageSize with Environment = 10
+2022-07-17 16:32:27,380 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] successMessage with Environment  = Your message was created sucessfully
+2022-07-17 16:32:27,381 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-1] Java Home with Environment = C:\Program Files\OpenJDK\openjdk-11.0.14.1_1
+2022-07-17 16:32:27,381 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) method is : 745
+2022-07-17 16:32:27,382 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] String com.example.spring.controller.DashboardController.displayDashboard(Model,Authentication,HttpSession) execution ended
+2022-07-17 16:44:21,807 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:44:21,816 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:44:23,418 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 16:44:36,419 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:44:36,524 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:44:36,525 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:44:37,482 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:44:37,580 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 88 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:44:38,872 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:44:38,885 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:44:38,886 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:44:38,886 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:44:39,002 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:44:39,002 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2476 ms
+2022-07-17 16:44:39,292 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:44:41,503 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:44:41,641 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:44:41,710 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:44:41,883 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:44:42,004 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:44:42,943 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:44:43,051 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:44:43,301 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'ESProps': Could not bind properties to 'ESProps' : prefix=eazyschool, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'eazyschool' to com.example.spring.config.ESProps
+2022-07-17 16:44:43,302 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:44:43,306 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:44:44,817 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2022-07-17 16:44:44,821 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-07-17 16:44:44,837 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-17 16:44:44,859 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'eazyschool' to com.example.spring.config.ESProps failed:
+
+    Property: eazyschool.pageSize
+    Value: 10
+    Origin: class path resource [application.properties] - 24:21
+    Reason: must be between 5 and 25
+
+
+Action:
+
+Update your application's configuration
+
+2022-07-17 16:45:05,364 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:45:05,485 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:45:05,487 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:45:08,123 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:45:08,480 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 321 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:45:10,458 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:45:10,469 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:45:10,470 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:45:10,471 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:45:10,584 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:45:10,585 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5097 ms
+2022-07-17 16:45:10,954 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:45:13,276 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:45:13,395 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:45:13,450 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:45:13,577 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:45:13,688 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:45:14,446 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:45:14,540 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:45:15,500 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:45:15,655 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:45:15,672 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 15
+2022-07-17 16:45:15,673 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:45:15,917 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:45:15,967 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 16:45:16,785 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:45:16,791 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 5
+2022-07-17 16:45:16,792 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:45:17,444 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3fae6079, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c38ba74, org.springframework.security.web.context.SecurityContextPersistenceFilter@37b4b3d6, org.springframework.security.web.header.HeaderWriterFilter@1418593b, org.springframework.security.web.csrf.CsrfFilter@2b6aa64e, org.springframework.security.web.authentication.logout.LogoutFilter@7e01034f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23c0fac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6b65de74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6204eae8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35d27f30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59eb51f9, org.springframework.security.web.session.SessionManagementFilter@4572b555, org.springframework.security.web.access.ExceptionTranslationFilter@672602f, org.springframework.security.web.access.intercept.AuthorizationFilter@3bff5522]
+2022-07-17 16:45:17,444 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 1527
+2022-07-17 16:45:17,446 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:45:19,126 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-17 16:45:19,209 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:45:19,252 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-17 16:45:23,158 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 16:45:23,159 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-07-17 16:45:23,162 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2022-07-17 16:45:23,224 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:45:23,228 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:45:23,240 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:45:23,243 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 1
+2022-07-17 16:45:23,243 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:45:23,245 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:23,245 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:23,245 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:23,246 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:23,246 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:23,247 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:23,247 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:23,247 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:23,248 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:23,249 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:45:23,769 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 519
+2022-07-17 16:45:23,770 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:45:23,771 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 541
+2022-07-17 16:45:23,771 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:45:23,771 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 547
+2022-07-17 16:45:23,771 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:45:26,373 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:45:26,373 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:45:26,374 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:45:26,375 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 0
+2022-07-17 16:45:26,376 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:45:26,376 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:26,377 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:26,377 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:26,379 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:26,379 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:26,379 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:26,381 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:26,381 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:26,381 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:26,383 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:45:26,835 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 452
+2022-07-17 16:45:26,836 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:45:26,836 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 462
+2022-07-17 16:45:26,836 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:45:26,836 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 463
+2022-07-17 16:45:26,837 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-8] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:45:34,421 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:45:34,423 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:45:35,953 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 16:45:42,314 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 16:45:42,419 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 16:45:42,419 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 16:45:43,435 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 16:45:43,536 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 89 ms. Found 7 JPA repository interfaces.
+2022-07-17 16:45:44,985 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 16:45:44,995 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:45:44,996 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 16:45:44,997 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 16:45:45,099 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 16:45:45,100 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2678 ms
+2022-07-17 16:45:45,432 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 16:45:47,514 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 16:45:47,633 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 16:45:47,685 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 16:45:47,845 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 16:45:47,989 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 16:45:48,762 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 16:45:48,862 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:45:49,935 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:45:50,084 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:45:50,116 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 30
+2022-07-17 16:45:50,116 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:45:50,396 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:45:50,457 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 16:45:51,212 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:45:51,217 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 3
+2022-07-17 16:45:51,217 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:45:51,694 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@41afa7b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@677f4253, org.springframework.security.web.context.SecurityContextPersistenceFilter@780d67f5, org.springframework.security.web.header.HeaderWriterFilter@295ce7e8, org.springframework.security.web.csrf.CsrfFilter@5ba9bd54, org.springframework.security.web.authentication.logout.LogoutFilter@39444b98, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50b73d44, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1dcc4ecc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@229d7587, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ae065cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18baca5e, org.springframework.security.web.session.SessionManagementFilter@39490624, org.springframework.security.web.access.ExceptionTranslationFilter@61ec8f6d, org.springframework.security.web.access.intercept.AuthorizationFilter@55476d4a]
+2022-07-17 16:45:51,695 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 1299
+2022-07-17 16:45:51,695 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:45:52,672 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-17 16:45:52,713 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-17 16:45:52,734 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-17 16:45:58,408 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 16:45:58,408 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-07-17 16:45:58,411 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-07-17 16:45:58,469 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:45:58,473 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:45:58,490 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:45:58,493 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 2
+2022-07-17 16:45:58,493 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:45:58,494 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:58,495 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:58,495 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:58,496 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:45:58,496 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:45:58,496 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:45:58,498 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:45:58,876 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 378
+2022-07-17 16:45:58,876 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:45:58,877 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 404
+2022-07-17 16:45:58,877 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:45:58,878 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 409
+2022-07-17 16:45:58,878 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:46:09,633 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:46:09,634 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:46:09,635 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:46:09,635 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 0
+2022-07-17 16:46:09,635 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:46:09,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:46:09,637 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:46:09,934 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 296
+2022-07-17 16:46:09,935 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:46:09,935 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 300
+2022-07-17 16:46:09,936 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:46:09,936 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 302
+2022-07-17 16:46:09,936 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:46:11,183 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:46:11,184 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:46:11,184 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:46:11,184 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 0
+2022-07-17 16:46:11,185 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:46:11,185 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:46:11,185 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:46:11,185 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:46:11,185 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:46:11,186 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:46:11,186 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:46:11,186 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:46:11,633 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 447
+2022-07-17 16:46:11,634 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:46:11,635 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 451
+2022-07-17 16:46:11,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:46:11,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 452
+2022-07-17 16:46:11,636 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:54:20,474 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 16:54:20,477 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 16:54:22,012 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 16:54:40,066 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:54:40,090 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 18
+2022-07-17 16:54:40,090 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:54:40,293 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:54:41,010 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:54:41,015 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 3
+2022-07-17 16:54:41,015 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:54:41,546 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 1250
+2022-07-17 16:54:41,546 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:55:12,968 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:55:12,972 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:55:12,988 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:55:12,991 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 2
+2022-07-17 16:55:12,991 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:55:12,992 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:55:12,992 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:55:12,993 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:55:12,993 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:55:12,994 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:55:12,994 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:55:12,994 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:55:12,995 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:55:12,995 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:55:12,996 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:55:13,564 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 567
+2022-07-17 16:55:13,564 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:55:13,565 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 591
+2022-07-17 16:55:13,565 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:55:13,566 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 596
+2022-07-17 16:55:13,566 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-2] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 16:56:46,465 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 16:56:46,570 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method execution started!
+2022-07-17 16:56:46,579 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() method is : 7
+2022-07-17 16:56:46,579 INFO com.example.spring.aspects.LoggerAspect [restartedMain] PasswordEncoder com.example.spring.config.ProjectSecurityConfig.passwordEncoder() execution ended
+2022-07-17 16:56:46,720 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method execution started!
+2022-07-17 16:56:46,756 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 16:56:47,249 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method execution started!
+2022-07-17 16:56:47,253 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) method is : 3
+2022-07-17 16:56:47,254 INFO com.example.spring.aspects.LoggerAspect [restartedMain] void com.example.spring.config.WebConfig.addViewControllers(ViewControllerRegistry) execution ended
+2022-07-17 16:56:47,636 INFO com.example.spring.aspects.LoggerAspect [restartedMain] Time took to execute SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) method is : 916
+2022-07-17 16:56:47,636 INFO com.example.spring.aspects.LoggerAspect [restartedMain] SecurityFilterChain com.example.spring.config.ProjectSecurityConfig.defaultSecurityFilterChain(HttpSecurity) execution ended
+2022-07-17 16:56:54,767 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method execution started!
+2022-07-17 16:56:54,771 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method execution started!
+2022-07-17 16:56:54,783 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() method execution started!
+2022-07-17 16:56:54,785 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute int com.example.spring.config.ESProps.getPageSize() method is : 1
+2022-07-17 16:56:54,785 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] int com.example.spring.config.ESProps.getPageSize() execution ended
+2022-07-17 16:56:54,786 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:56:54,787 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:56:54,787 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:56:54,787 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:56:54,787 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:56:54,788 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:56:54,788 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() method execution started!
+2022-07-17 16:56:54,788 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Map com.example.spring.config.ESProps.getContact() method is : 0
+2022-07-17 16:56:54,788 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Map com.example.spring.config.ESProps.getContact() execution ended
+2022-07-17 16:56:54,789 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method execution started!
+2022-07-17 16:56:55,189 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) method is : 400
+2022-07-17 16:56:55,190 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.repository.ContactRepository.findByStatusWithQuery(String,Pageable) execution ended
+2022-07-17 16:56:55,190 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) method is : 419
+2022-07-17 16:56:55,190 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Page com.example.spring.service.ContactService.findMsgsWithOpenStatus(int,String,String) execution ended
+2022-07-17 16:56:55,191 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] Time took to execute ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) method is : 423
+2022-07-17 16:56:55,191 INFO com.example.spring.aspects.LoggerAspect [http-nio-8080-exec-1] ModelAndView com.example.spring.controller.ContactController.displayMessages(Model,int,String,String) execution ended
+2022-07-17 17:08:46,304 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.3.Final
+2022-07-17 17:08:46,465 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-17 17:08:46,465 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-17 17:08:48,103 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-17 17:08:48,240 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 119 ms. Found 7 JPA repository interfaces.
+2022-07-17 17:08:49,775 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-07-17 17:08:49,783 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-17 17:08:49,783 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-07-17 17:08:49,784 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-17 17:08:49,878 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-07-17 17:08:49,878 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3411 ms
+2022-07-17 17:08:50,214 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-07-17 17:08:52,782 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-07-17 17:08:52,838 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-17 17:08:52,882 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-17 17:08:53,037 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-17 17:08:53,136 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-17 17:08:53,850 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-17 17:08:53,938 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 17:08:54,978 WARN org.springframework.data.jpa.repository.query.NamedQuery [restartedMain] Finder method public abstract org.springframework.data.domain.Page com.example.spring.repository.ContactRepository.findOpenMessages(java.lang.String,org.springframework.data.domain.Pageable) is backed by a NamedQuery but contains a Pageable parameter! Sorting delivered via this Pageable will not be applied!
+2022-07-17 17:08:55,431 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-17 17:08:57,552 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@739b941, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c7c3470, org.springframework.security.web.context.SecurityContextPersistenceFilter@705e9efa, org.springframework.security.web.header.HeaderWriterFilter@7176a95, org.springframework.security.web.csrf.CsrfFilter@39813640, org.springframework.security.web.authentication.logout.LogoutFilter@50b465a4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f6e1a14, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d9f6151, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40b8200, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@252a8c61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a0f5b47, org.springframework.security.web.session.SessionManagementFilter@216999c2, org.springframework.security.web.access.ExceptionTranslationFilter@14258e85, org.springframework.security.web.access.intercept.AuthorizationFilter@27ab2a7d]
+2022-07-17 17:08:58,933 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-07-17 17:08:58,972 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-07-17 17:08:58,997 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-17 17:09:01,990 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-17 17:09:01,990 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-07-17 17:09:01,993 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 3 ms
+2022-07-17 17:09:16,101 WARN com.example.spring.controller.DashboardController [http-nio-8080-exec-2] WARN
+2022-07-17 17:09:16,103 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] ERROR
+2022-07-17 17:09:16,103 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] defaultPageSize with @Value = 10
+2022-07-17 17:09:16,103 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] successMessage with @Value = Your message was created successfully
+2022-07-17 17:09:16,104 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] defaultPageSize with Environment = 10
+2022-07-17 17:09:16,104 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] successMessage with Environment  = Your message was created successfully
+2022-07-17 17:09:16,104 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-2] Java Home with Environment = C:\Program Files\OpenJDK\openjdk-11.0.14.1_1
+2022-07-17 17:09:22,519 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-17 17:09:22,523 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-07-17 17:09:24,082 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-07-17 17:10:55,022 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] ERROR
+2022-07-17 17:10:55,024 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] defaultPageSize with @Value = 10
+2022-07-17 17:10:55,025 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] successMessage with @Value = Your message was created successfully
+2022-07-17 17:10:55,025 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] defaultPageSize with Environment = 10
+2022-07-17 17:10:55,026 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] successMessage with Environment  = Your message was created successfully
+2022-07-17 17:10:55,026 ERROR com.example.spring.controller.DashboardController [http-nio-8080-exec-7] Java Home with Environment = C:\Program Files\OpenJDK\openjdk-11.0.14.1_1
